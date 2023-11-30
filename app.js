@@ -16,7 +16,7 @@ botones.forEach(boton => {
         const botonSeleccionado = boton.textContent;
         if (botonSeleccionado === "Crear") {
             let input = document.querySelector('#evento').value;
-            eventos.push(input);
+            eventos.unshift(input);
             limpiarPantalla();
             showDom ('lista', eventos);
         } else {
